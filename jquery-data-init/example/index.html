@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery-data-init example</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="../data-init.jquery.js"></script>
+    <script>
+        jQuery.dataInitFunction("hello", function(initNode, initParams){
+            var helloName = "world";
+            if (initParams != undefined) {
+                helloName = initParams;
+            }
+            jQuery(initNode).html("Hello "+helloName+" !");
+        });
+        
+        jQuery.dataInitFunction("hello2", function(initNode, initParams){
+            var helloName = "world";
+            if (initParams != undefined) {
+                helloName = initParams.helloName;
+            }
+            jQuery(initNode).html("Hello "+helloName+" !");
+        });
+
+        jQuery(document).ready(function(){
+            jQuery("[data-init]").dataInit();
+        });
+    </script>
+</head>
+<body>
+    <div data-init="hello"></div>
+    <div data-init="hello"></div>
+    <div data-init="hello" data-init-params="'John Doe'"></div>
+    <div data-init="hello2" data-init-params="{helloName: 'John Doe'}"></div>
+</body>
+</html>
