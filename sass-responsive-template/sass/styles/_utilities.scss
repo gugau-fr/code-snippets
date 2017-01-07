@@ -1,0 +1,28 @@
+
+@include only-desktop {
+    .only-tablet,
+    .only-phone {
+        display: none;
+    }
+    .not-desktop {
+        display: none;
+    }
+}
+@include only-tablet {
+    .only-desktop,
+    .only-phone {
+        display: none;
+    }
+    .not-tablet{
+        display: none;
+    }
+}
+@include only-phone {
+    .only-desktop,
+    .only-tablet {
+        display: none;
+    }
+    .not-phone {
+        display: none;
+    }
+}

@@ -1,0 +1,7 @@
+$isDesktop: false;
+$isTablet: true;
+$isPhone: false;
+
+@import "mixin/mixin_if";
+
+@import "styles";

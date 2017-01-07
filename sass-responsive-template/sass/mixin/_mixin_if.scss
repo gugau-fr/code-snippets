@@ -1,0 +1,33 @@
+
+@mixin only-desktop {
+    @if ($isDesktop) {
+        @content;
+    }
+}
+@mixin only-tablet {
+    @if ($isTablet) {
+        @content;
+    }
+}
+@mixin only-phone {
+    @if ($isPhone) {
+        @content;
+    }
+}
+
+@mixin not-desktop {
+    @if (not $isDesktop) {
+        @content;
+    }
+}
+@mixin not-tablet {
+    @if (not $isTablet) {
+        @content;
+    }
+}
+@mixin not-phone {
+    @if (not $isPhone) {
+        @content;
+    }
+}
+
