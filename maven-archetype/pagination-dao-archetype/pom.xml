@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>fr.gugau.archetype</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.gugau.archetype</groupId>
+    <artifactId>database-pagination-dao</artifactId>
+    <version>1.0</version>
+    <packaging>maven-archetype</packaging>
+    <name>Archetypes parent POM</name>
+    <description>Archetype that generate DAO with pagination.</description>
+</project>
