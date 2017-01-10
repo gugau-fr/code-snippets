@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<archetype-descriptor name="pagination-dao-archetype">
+<archetype-descriptor name="pagination-dao-archetype" partial="true">
 	<fileSets>
 		<fileSet filtered="true" packaged="true">
 			<directory>src/main/java</directory>
@@ -10,8 +10,8 @@
 		</fileSet>
 	</fileSets>
 	<requiredProperties>
-		<requiredProperty key="daoClassName">
-			<defaultValue>EntityDAO</defaultValue>
+		<requiredProperty key="entityName">
+			<defaultValue>Entity</defaultValue>
 		</requiredProperty>
 	</requiredProperties>
 </archetype-descriptor>
